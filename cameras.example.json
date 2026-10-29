@@ -1,0 +1,24 @@
+{
+  "defaultSet": "Outside",
+  "networkCachingMs": 500,
+  "reconnectSeconds": 10,
+  "rtspTcp": true,
+  "vlcDirectory": "",
+  "cameras": [
+    {
+      "id": "front",
+      "name": "Front door",
+      "onvifUrl": "http://192.168.1.101/onvif/device_service",
+      "profileToken": "",
+      "username": "",
+      "password": ""
+    },
+    { "id": "driveway", "name": "Driveway", "onvifUrl": "http://192.168.1.102/onvif/device_service", "username": "", "password": "" },
+    { "id": "garden", "name": "Garden", "onvifUrl": "http://192.168.1.103/onvif/device_service", "username": "", "password": "" },
+    { "id": "garage", "name": "Garage", "onvifUrl": "http://192.168.1.104/onvif/device_service", "username": "", "password": "" }
+  ],
+  "sets": [
+    { "name": "Outside", "columns": 2, "cameras": ["front", "driveway", "garden", "garage"] },
+    { "name": "Entrance", "columns": 0, "cameras": ["front", "driveway"] }
+  ]
+}
